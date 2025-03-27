@@ -105,7 +105,7 @@ if web == "📍States and Routes":
         select_type = slt.radio("Choose bus type", ("sleeper", "semi-sleeper", "others"))
     with col2:
         select_fare = slt.radio("Choose bus fare range", ("50-1000", "1000-2000", "2000 and above"))
-    TIME = slt.time_input("select the time")
+
 
     # Kerala bus fare filtering
     if S == "Kerala":
@@ -136,7 +136,7 @@ if web == "📍States and Routes":
                 SELECT * FROM bus_details 
                 WHERE Price BETWEEN {fare_min} AND {fare_max}
                 AND Route_name = "{K}"
-                AND {bus_type_condition} AND Start_time>='{TIME}'
+                AND {bus_type_condition} 
                 ORDER BY Price and Start_time DESC
             '''
             my_cursor.execute(query)
@@ -182,7 +182,7 @@ if web == "📍States and Routes":
                 SELECT * FROM bus_details 
                 WHERE Price BETWEEN {fare_min} AND {fare_max}
                 AND Route_name = "{A}"
-                AND {bus_type_condition} AND Start_time>='{TIME}'
+                AND {bus_type_condition}
                 ORDER BY Price and Start_time DESC
             '''
             my_cursor.execute(query)
@@ -228,7 +228,7 @@ if web == "📍States and Routes":
                 SELECT * FROM bus_details 
                 WHERE Price BETWEEN {fare_min} AND {fare_max}
                 AND Route_name = "{T}"
-                AND {bus_type_condition} AND Start_time>='{TIME}'
+                AND {bus_type_condition} 
                 ORDER BY Price and Start_time DESC
             '''
             my_cursor.execute(query)
@@ -274,7 +274,7 @@ if web == "📍States and Routes":
                 SELECT * FROM bus_details 
                 WHERE Price BETWEEN {fare_min} AND {fare_max}
                 AND Route_name = "{G}"
-                AND {bus_type_condition} AND Start_time>='{TIME}'
+                AND {bus_type_condition} 
                 ORDER BY Price and Start_time DESC
             '''
             my_cursor.execute(query)
@@ -320,7 +320,7 @@ if web == "📍States and Routes":
                 SELECT * FROM bus_details 
                 WHERE Price BETWEEN {fare_min} AND {fare_max}
                 AND Route_name = "{R}"
-                AND {bus_type_condition} AND Start_time>='{TIME}'
+                AND {bus_type_condition} 
                 ORDER BY Price and Start_time DESC
             '''
             my_cursor.execute(query)
@@ -366,7 +366,7 @@ if web == "📍States and Routes":
                 SELECT * FROM bus_details 
                 WHERE Price BETWEEN {fare_min} AND {fare_max}
                 AND Route_name = "{SB}"
-                AND {bus_type_condition} AND Start_time>='{TIME}'
+                AND {bus_type_condition} 
                 ORDER BY Price and Start_time DESC
             '''
             my_cursor.execute(query)
@@ -412,7 +412,7 @@ if web == "📍States and Routes":
                 SELECT * FROM bus_details 
                 WHERE Price BETWEEN {fare_min} AND {fare_max}
                 AND Route_name = "{A}"
-                AND {bus_type_condition} AND Start_time>='{TIME}'
+                AND {bus_type_condition} 
                 ORDER BY Price and Start_time DESC
             '''
             my_cursor.execute(query)
@@ -458,7 +458,7 @@ if web == "📍States and Routes":
                 SELECT * FROM bus_details 
                 WHERE Price BETWEEN {fare_min} AND {fare_max}
                 AND Route_name = "{AS}"
-                AND {bus_type_condition} AND Start_time>='{TIME}'
+                AND {bus_type_condition}
                 ORDER BY Price and Start_time DESC
             '''
             my_cursor.execute(query)
@@ -504,7 +504,7 @@ if web == "📍States and Routes":
                 SELECT * FROM bus_details 
                 WHERE Price BETWEEN {fare_min} AND {fare_max}
                 AND Route_name = "{UP}"
-                AND {bus_type_condition} AND Start_time>='{TIME}'
+                AND {bus_type_condition} 
                 ORDER BY Price and Start_time DESC
             '''
             my_cursor.execute(query)
@@ -550,7 +550,7 @@ if web == "📍States and Routes":
                 SELECT * FROM bus_details 
                 WHERE Price BETWEEN {fare_min} AND {fare_max}
                 AND Route_name = "{WB}"
-                AND {bus_type_condition} AND Start_time>='{TIME}'
+                AND {bus_type_condition} 
                 ORDER BY Price and Start_time  DESC
             '''
             my_cursor.execute(query)
