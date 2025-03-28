@@ -97,7 +97,7 @@ if web == "Home":
 
 # States and Routes page setting
 if web == "📍States and Routes":
-    S = slt.selectbox("Lists of States", ["Kerala", "Andhra Pradesh", "Telangana", "Goa", "Rajastan",
+    S = slt.selectbox("Lists of States", ["Kerala", "Andhra Pradesh", "Telangana", "Goa", "Rajasthan",
                                           "South Bengal", "Haryana", "Assam", "Uttar Pradesh", "West Bengal"])
 
     col1, col2 = slt.columns(2)
